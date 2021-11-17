@@ -1,0 +1,121 @@
+body{
+    margin: 15px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+.active{
+    background-color: #FF0B7B;
+}
+li label{
+    color: white;
+}
+.form-login {
+    float:right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+form{
+    margin-left: 45px;
+}
+h2{
+    margin-left:45px;
+}
+img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+li a{
+
+}
+.dropbutton {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: fixed;
+    background-color: aqua;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 2);
+    z-index: 1;
+    opacity: 0.7;
+}
+.dropdown-content a{
+    color: black;
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{background-color: #d8d8d8;}
+
+.dropdown:hover .dropbtn{
+    background-color: #f9f9f9;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    margin-top: 0px;
+}
+
+.image-overlay{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 20%;
+    line-height: 120px;
+    height: 120px;
+    background: #103b51;
+    border-radius: 10px;
+    box-shadow: 0 5px 1px #f9f9f9;
+    cursor: pointer;
+}
+.image-overlay:hover .overlay{
+    opacity: 0.5;
+}
+.overlay{
+    position: absolute;
+    border-radius: 10px;
+    opacity: 0;
+    background-color: #f9f9f9;
+    @include transition (opacity .5s ease-in-out);
+}
+.box{
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+    padding: 0;
+    width: 1246px;
+    height: 225px;
+    text-align: center;
+    margin-left: 0px;
+}
+.image-overlay img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}

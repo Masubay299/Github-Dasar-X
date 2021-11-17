@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <script>
+        var foo = 7;
+        console.log("Nilai foo : "+ foo);
+
+        if(typeof foo === "number"){
+            console.log("Foo bertipe number");
+            if(foo >= 10){
+                console.log("Nilai foo lebih besar dari 10");
+            }
+            else{
+                console.log("Nilai foo lebih kecil dari 10");
+            }
+        }
+        else if(typeof foo === "string"){
+            console.log("Foo bertipe string");
+        }
+        else{
+            console.log("Nilai foo tidak bertipe string atau number");
+        }
+    </script>
+    </body>
+</html>

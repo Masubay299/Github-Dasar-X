@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    document.write("<br>");
+    document.write("--**--     SISTEM INFORMASI PERHOTELAN --**-- <br><br>");
+    nama = prompt("Masukan Nama Pelanggan : ");
+    document.write("Pilih Jenis Kamar : <br>");
+    document.write("1. Deluxe Room Rp.275.000/hari <br>");
+    document.write("2. Suite Room Rp. 300.000/hari <br>");
+    document.write("3. President Room Rp. 370.000/hari <br>");
+    var kamar1 = 275000;
+    var kamar2 = 300000;
+    var kamar3 = 370000;
+    var kamar = prompt("Jenis kamar yang dipesan : ");
+    document.write("Jenis kamar yang dipesan : " + kamar + "<br><br>");
+    var LamaMenginap = prompt("Lama menginap : ");
+    document.write("Lama menginap : " + LamaMenginap + "<br><br>");
+    var tarif;
+    if(kamar == 1){
+        tarif = LamaMenginap * kamar1;
+    }
+    else if (kamar == 2){
+        tarif = LamaMenginap * kamar2;
+    }
+    else if (kamar == 3){
+        tarif = LamaMenginap * kamar3;
+    }
+    else{
+        
+    }
+    var diskon, bayar;
+    document.write("Status Pelanggan : <br>");
+    document.write("1. Member <br>");
+    document.write("2. Non Member <br>");
+    var statusPelanggan = prompt("Pilih status pelanggan : ");
+    document.write("Pilih status pelanggan : " + statusPelanggan + "<br>");
+    if(statusPelanggan == 1){
+        if (LamaMenginap >= 4 && LamaMenginap <= 7){
+            diskon = 0.20 * tarif;
+        }
+        else if(LamaMenginap > 7){
+            diskon = 0.35 * tarif;
+        }
+        else{
+
+        }
+    }
+    else if(statusPelanggan == 2){
+        if(LamaMenginap >= 4 && LamaMenginap <=7){
+            diskon = 0.10 * tarif;
+        }
+        else if(lama > 7) {
+            diskon = 0.15 * tarif;
+        }
+        else{
+
+        }
+    }
+    bayar = tarif - diskon;
+    document.write("<br>");
+    document.write("--**--     NOTA PEMBAYARAN HOTEL MASBAYSTAR --**-- <br><br>");
+    document.write("Nama Pelanggan : " + nama + "<br>");
+    document.write("Jenis Kamar : " + kamar + "<br>");
+    document.write("Tarif Penginapan : " + tarif + "<br>");
+    document.write("Diskon Menginap : " + diskon + "<br>");
+    document.write("Nominal yang harus dibayar : " + bayar + "<br>");
+    </script>
+</body>
+</html>
